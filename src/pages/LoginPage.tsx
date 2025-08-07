@@ -106,10 +106,7 @@ const LoginPage: React.FC = () => {
             </button>
           </form>
 
-          <div className="mt-6 text-center text-sm text-gray-500">
-            <p>Demo Credentials:</p>
-            <p>Email: any@college.edu | Password: any | Role: any</p>
-          </div>
+ 
         </div>
       </div>
     </div>
