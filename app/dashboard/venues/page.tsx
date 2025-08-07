@@ -176,14 +176,15 @@ export default function VenuesPage() {
                   <SelectTrigger>
                     <SelectValue />
                   </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="all">All Types</SelectItem>
-                    <SelectItem value="Auditorium">Auditorium</SelectItem>
-                    <SelectItem value="Seminar Hall">Seminar Hall</SelectItem>
-                    <SelectItem value="Lab">Lab</SelectItem>
-                    <SelectItem value="Classroom">Classroom</SelectItem>
-                    <SelectItem value="Meeting Room">Meeting Room</SelectItem>
-                  </SelectContent>
+                  <SelectContent className="bg-white">
+  <SelectItem value="all">All Types</SelectItem>
+  <SelectItem value="Auditorium">Auditorium</SelectItem>
+  <SelectItem value="Seminar Hall">Seminar Hall</SelectItem>
+  <SelectItem value="Lab">Lab</SelectItem>
+  <SelectItem value="Classroom">Classroom</SelectItem>
+  <SelectItem value="Meeting Room">Meeting Room</SelectItem>
+</SelectContent>
+
                 </Select>
               </div>
               <div className="space-y-2">
@@ -192,12 +193,13 @@ export default function VenuesPage() {
                   <SelectTrigger>
                     <SelectValue />
                   </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="all">All Sizes</SelectItem>
-                    <SelectItem value="small">Small (≤50)</SelectItem>
-                    <SelectItem value="medium">Medium (51-150)</SelectItem>
-                    <SelectItem value="large">Large (>150)</SelectItem>
-                  </SelectContent>
+                  <SelectContent className="bg-white">
+  <SelectItem value="all">All Sizes</SelectItem>
+  <SelectItem value="small">Small (≤50)</SelectItem>
+  <SelectItem value="medium">Medium (51-150)</SelectItem>
+  <SelectItem value="large">Large (&gt;150)</SelectItem>
+</SelectContent>
+
                 </Select>
               </div>
               <div className="space-y-2">

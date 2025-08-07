@@ -146,12 +146,17 @@ export default function Dashboard() {
               Manage your venue bookings and track requests
             </p>
           </div>
-          <Link href="/dashboard/book-venue">
-            <Button className="flex items-center gap-2">
-              <Plus className="w-4 h-4" />
-              New Booking
-            </Button>
-          </Link>
+          <div className="border border-blue-500 rounded-md p-1">
+            <Link href="/dashboard/book-venue">
+              <Button
+                variant="ghost"
+                className="flex items-center gap-2 text-blue-600 hover:bg-blue-50"
+              >
+                <Plus className="w-4 h-4" />
+                New Booking
+              </Button>
+            </Link>
+          </div>
         </div>
 
         {/* Stats Cards */}

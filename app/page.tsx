@@ -67,26 +67,26 @@ export default function LoginPage() {
                 <SelectTrigger>
                   <SelectValue placeholder="Select your role" />
                 </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="student">
+                <SelectContent className="bg-white">
+                  <SelectItem value="student" className="hover:bg-blue-50">
                     <div className="flex items-center gap-2">
                       <GraduationCap className="w-4 h-4" />
                       Student
                     </div>
                   </SelectItem>
-                  <SelectItem value="faculty">
+                  <SelectItem value="faculty" className="hover:bg-blue-50">
                     <div className="flex items-center gap-2">
                       <Users className="w-4 h-4" />
                       Faculty
                     </div>
                   </SelectItem>
-                  <SelectItem value="club">
+                  <SelectItem value="club" className="hover:bg-blue-50">
                     <div className="flex items-center gap-2">
                       <Building className="w-4 h-4" />
                       Club Representative
                     </div>
                   </SelectItem>
-                  <SelectItem value="admin">
+                  <SelectItem value="admin" className="hover:bg-blue-50">
                     <div className="flex items-center gap-2">
                       <Shield className="w-4 h-4" />
                       Admin
@@ -95,10 +95,11 @@ export default function LoginPage() {
                 </SelectContent>
               </Select>
             </div>
-
-            {/* Filled rectangle behind button */}
             <div className="bg-blue-500 rounded-md p-1.5">
-              <Button type="submit" className="w-full text-white" disabled={!email || !password || !role}>
+              <Button
+                type="submit"
+                className="w-full text-white hover:bg-blue-600 rounded-md py-2"
+                disabled={!email || !password || !role}>
                 Sign In
               </Button>
             </div>
