@@ -17,7 +17,6 @@ export default function LoginPage() {
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault()
-    // Store user data in localStorage for demo purposes
     const userData = {
       email,
       role,
@@ -26,13 +25,6 @@ export default function LoginPage() {
     }
     localStorage.setItem('user', JSON.stringify(userData))
     router.push('/dashboard')
-  }
-
-  const roleIcons = {
-    student: GraduationCap,
-    faculty: Users,
-    club: Building,
-    admin: Shield
   }
 
   return (
@@ -103,14 +95,14 @@ export default function LoginPage() {
                 </SelectContent>
               </Select>
             </div>
-            <Button type="submit" className="w-full" disabled={!email || !password || !role}>
-              Sign In
-            </Button>
+
+            {/* Filled rectangle behind button */}
+            <div className="bg-blue-500 rounded-md p-1.5">
+              <Button type="submit" className="w-full text-white" disabled={!email || !password || !role}>
+                Sign In
+              </Button>
+            </div>
           </form>
-          <div className="mt-6 text-center text-sm text-muted-foreground">
-            <p>Demo Credentials:</p>
-            <p>Email: any@college.edu | Password: any | Role: any</p>
-          </div>
         </CardContent>
       </Card>
     </div>
